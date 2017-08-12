@@ -7,7 +7,20 @@
 </div>
 
 <script>
+
+	console.log("checkpoint a");
+
 	$("#my-click").click(function(){
-		$("#foo").html('<h1>zoo</h1>')
+		console.log("checkpoint b");
+	})
+
+	console.log("checkpoint c");
+
+	// $("#my-click").click(function(){
+	// 	alert("text");
+	// })
+
+	$("#my-click").click(function(){
+		$("#foo").after('<h1>zoo</h1>')
 	})
 </script>
